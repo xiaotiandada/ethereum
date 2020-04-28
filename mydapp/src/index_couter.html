@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>以太坊 DApp Demo</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <h1>账号: <span id="account"></span></h1>
+      <hr>
+      <div id="content">
+          <h2>智能合约：Counter</b></h2>
+          <p>获取智能合约中的value值: <span id="value"></span></p>
+          <button id="add">增加</button>
+
+      </div>
+      <div id="loader">正在加载...</div>
+
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://etherscan.io/jss/web3.min.js"></script>
+    <script src="vendor/@truffle/contract/dist/truffle-contract.js"></script>
+    <!-- <script src="https://libs.cdnjs.net/bignumber.js/9.0.0/bignumber.min.js"></script> -->
+    <script src="app_counter.js"></script>
+  </body>
+</html>
