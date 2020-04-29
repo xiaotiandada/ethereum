@@ -31,15 +31,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"increase\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/xiatian/Code/ethereum/mydapp/contracts/Counter.sol\":\"Counter\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/xiatian/Code/ethereum/mydapp/contracts/Counter.sol\":{\"keccak256\":\"0x20d824d25d79ca55406c04b6f53dcbb4fd23dbaa638a5c672956a4a70c0c8439\",\"urls\":[\"bzzr://1bf9234f165078b600fd98a86eba3e81f77ae34b7b9516252205a05a4cc527e9\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b506000808190555060a2806100256000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80636d4ce63c146037578063e8927fbc146053575b600080fd5b603d605b565b6040518082815260200191505060405180910390f35b60596064565b005b60008054905090565b6001600080828254019250508190555056fea165627a7a72305820601c84cecdae23cd20e58a351df7aca762bf044b01b6d8b78c9ae5f5b24e0ebd0029",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80636d4ce63c146037578063e8927fbc146053575b600080fd5b603d605b565b6040518082815260200191505060405180910390f35b60596064565b005b60008054905090565b6001600080828254019250508190555056fea165627a7a72305820601c84cecdae23cd20e58a351df7aca762bf044b01b6d8b78c9ae5f5b24e0ebd0029",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"increase\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/xiatian/Code/ethereum/counter/contracts/Counter.sol\":\"Counter\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/xiatian/Code/ethereum/counter/contracts/Counter.sol\":{\"keccak256\":\"0x20d824d25d79ca55406c04b6f53dcbb4fd23dbaa638a5c672956a4a70c0c8439\",\"urls\":[\"bzzr://1bf9234f165078b600fd98a86eba3e81f77ae34b7b9516252205a05a4cc527e9\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b506000808190555060a2806100256000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80636d4ce63c146037578063e8927fbc146053575b600080fd5b603d605b565b6040518082815260200191505060405180910390f35b60596064565b005b60008054905090565b6001600080828254019250508190555056fea165627a7a7230582007eba8c84b4f66810e77d5108bdaef333eff4278bfec6a6773fb4d8b0338ca400029",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80636d4ce63c146037578063e8927fbc146053575b600080fd5b603d605b565b6040518082815260200191505060405180910390f35b60596064565b005b60008054905090565b6001600080828254019250508190555056fea165627a7a7230582007eba8c84b4f66810e77d5108bdaef333eff4278bfec6a6773fb4d8b0338ca400029",
   "sourceMap": "44:266:0:-;;;106:43;8:9:-1;5:2;;;30:1;27;20:12;5:2;106:43:0;143:1;133:7;:11;;;;44:266;;;;;;",
   "deployedSourceMap": "44:266:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;44:266:0;;;;;;;;;;;;;;;;;;;;;;;;238:69;;;:::i;:::-;;;;;;;;;;;;;;;;;;;165:50;;;:::i;:::-;;238:69;273:7;295;;288:14;;238:69;:::o;165:50::-;209:1;198:7;;:12;;;;;;;;;;;165:50::o",
   "source": "pragma solidity >=0.4.21 <0.7.0;\n\n// 声明\ncontract Counter {\n  uint256 counter;\n\n  // 部署时调用\n  constructor() public {\n    counter = 0;\n  }\n\n  // 增加\n  function increase() public {\n    counter += 1;\n  }\n\n  // 返回counter\n  function get() public view returns(uint256) {\n    return counter;\n  }\n\n}",
-  "sourcePath": "/Users/xiatian/Code/ethereum/mydapp/contracts/Counter.sol",
+  "sourcePath": "/Users/xiatian/Code/ethereum/counter/contracts/Counter.sol",
   "ast": {
-    "absolutePath": "/Users/xiatian/Code/ethereum/mydapp/contracts/Counter.sol",
+    "absolutePath": "/Users/xiatian/Code/ethereum/counter/contracts/Counter.sol",
     "exportedSymbols": {
       "Counter": [
         28
@@ -356,7 +356,7 @@
     "src": "0:310:0"
   },
   "legacyAST": {
-    "absolutePath": "/Users/xiatian/Code/ethereum/mydapp/contracts/Counter.sol",
+    "absolutePath": "/Users/xiatian/Code/ethereum/counter/contracts/Counter.sol",
     "exportedSymbols": {
       "Counter": [
         28
@@ -680,18 +680,18 @@
     "42": {
       "events": {},
       "links": {},
-      "address": "0x2A3a2db21dEBCE2b8b84bd0bFcFa8A8f6c694b4D",
-      "transactionHash": "0x0e4dc445fd596f02878e5d55fcb8eb24b95e534a79837d0bd1b0818cb37060ab"
+      "address": "0xaddC7bC9fF053b416B5e37d759E174d633033569",
+      "transactionHash": "0xe7cbc87015c2b1caf0b4d34863b58874382bf289e87b1bbf5f93d6d0014079d0"
     },
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x90e1eB08754D1D2724A9B9b7d6b3023BEa6720E4",
-      "transactionHash": "0x9044f64377b1b1c53fa4905d459ca96934758d6e6c48ef2ee9920bfa3d195ba2"
+      "address": "0x5BC50dA001252a8e3eF405d9CbAB69dA7787Af34",
+      "transactionHash": "0x16fd0819dad983875fe3fc517bc37ce3ae0df727184d93db14d683389a29c46f"
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2020-04-29T04:42:22.636Z",
+  "updatedAt": "2020-04-29T06:43:53.467Z",
   "devdoc": {
     "methods": {}
   },

@@ -1,0 +1,21 @@
+{
+  "name": "mydapp",
+  "version": "1.0.0",
+  "description": "Truffle Box for a bare-minimum Truffle project (`truffle init`)",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@truffle/contract": "4.2.2",
+    "dotenv": "8.2.0",
+    "lite-server": "2.5.4",
+    "truffle-hdwallet-provider": "1.0.17"
+  }
+}
