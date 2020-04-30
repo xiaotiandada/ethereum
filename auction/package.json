@@ -19,7 +19,9 @@
     "url": "https://github.com/truffle-box/bare-box/issues"
   },
   "homepage": "https://github.com/truffle-box/bare-box#readme",
-  "dependencies": {},
+  "dependencies": {
+    "web3": "1.2.7"
+  },
   "devDependencies": {
     "@openzeppelin/contracts": "3.0.1"
   }
