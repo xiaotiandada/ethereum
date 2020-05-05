@@ -23,6 +23,9 @@
     "web3": "1.2.7"
   },
   "devDependencies": {
-    "@openzeppelin/contracts": "3.0.1"
+    "@openzeppelin/contracts": "3.0.1",
+    "@truffle/hdwallet-provider": "1.0.34",
+    "fs": "0.0.1-security",
+    "truffle-hdwallet-provider": "1.0.17"
   }
 }

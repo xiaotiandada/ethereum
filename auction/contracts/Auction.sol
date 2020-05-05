@@ -1,42 +1,12 @@
 pragma solidity >=0.4.21 <0.7.0;
 
-
-// pragma experimental ABIEncoderV2;
-
-// contract Auction {
-
-//   // 拥有者
-//   string owner = '';
-
-//   // 账户地址
-//   address account;
-
-//   struct Owner {
-//     address account;
-//   }
-//   mapping(address => Owner) ccc;
-
-//   constructor() public {
-//     //
-//   }
-
-//   // 买
-//   function buy (Owner memory _account) public payable {
-//     ccc[msg.sender] = _account;
-//   }
-
-//   // 得到拥有者
-//   function getOwner () public view returns (string memory) {
-//     return owner;
-//   }
-
-//     // 得到拥有者地址
-//   function getOwnerAddress () public view returns (address) {
-//     return account;
-//   }
-// }
-
 contract Auction {
+
+    // 拍卖名称
+    string public auctionName;
+    // 拍卖 id
+    uint256 public auctionId;
+
     // 受益者 出售者
     address payable public beneficiary;
 
@@ -64,6 +34,8 @@ contract Auction {
     constructor(uint256 _biddingTime, address payable _beneficiary) public {
         beneficiary = _beneficiary;
         auctionEndTime = _biddingTime;
+        auctionName = "炒鸡无敌闪瞎24k纯钛合金狗眼的卡";
+        auctionId = 1;
     }
 
     function get()
