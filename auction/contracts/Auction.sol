@@ -46,6 +46,10 @@ contract Auction {
         return (beneficiary, auctionEndTime, now);
     }
 
+    function getAuctionInfo() public view returns (string memory) {
+        return auctionName;
+    }
+
     function getHighest()
         public
         view
@@ -61,7 +65,7 @@ contract Auction {
     // 拍卖
     function bid() public payable {
         // 关键字payable用来标明合约函数可以接受Ether币.
-        // require(now <= auctionEndTime, "Auction already ended.");
+        require(now <= auctionEndTime, "Auction already ended.");
 
         // 如果价格不超过最高价，钱会被退回.
         require(msg.value > highestBid, "There already is a higher bid.");

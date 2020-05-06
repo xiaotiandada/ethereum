@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,41 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+  <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
   <div id="app">
-    {{ message }}
+    <span class="account">当前账户: {{ account }}</span>
+    <div class="container">
+      <div class="card">
+        <img
+          src="https://d15f34w2p8l1cc.cloudfront.net/hearthstone/e1b51a56682c93ce0ff67473ece0664ba6400d99bf9adf4099d168b2583d5a43.png"
+          alt="card">
+      </div>
+      <div class="info">
+        <h3>{{ auctionName }}</h3>
+        <ul>
+          <li> <span>卖家: </span>{{ beneficiary }}</li>
+          <li> <span>结束时间: </span> {{ time }}</li>
+          <li> <span>倒计时: </span> {{ countdown }}</li>
+          <li> <span>最高出价格者: </span>{{ highestBidder }}</li>
+          <li> <span>最高价格: </span>{{ highestBidFormat }}</li>
+        </ul>
+        <div v-show="!selfCard">
+          <div>
+            <input type="text" v-model="bidValue" class="bid-input">
+          </div>
+          <button id="bid" class="buy">立即购买</button>
+        </div>
+        <h2 v-show="selfCard">🎉恭喜您拥有此卡🎉</h2>
+      </div>
+    </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://libs.cdnjs.net/moment.js/2.25.3/moment.min.js"></script>
   <script src="./app.js"></script>
 </body>
+
 </html>

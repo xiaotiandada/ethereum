@@ -1,0 +1,111 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #000;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.account {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  color: #fff;
+}
+
+.container {
+  min-width: 940px;
+  margin: 0 auto;
+}
+
+.container::after {
+  width: 0;
+  height: 0;
+  clear: both;
+  display: block;
+  content: '';
+}
+
+.buy {
+  width: 180px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: #f8da75;
+  cursor: pointer;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+  box-shadow: 0 7px 0 #c29604, 0 8px 3px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.bid-input {
+  width: 180px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 0 10px;
+  margin: 100px 0 0 0;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 40%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  width: 60%;
+  float: left;
+  color: #fff;
+  height: 100%;
+  padding: 0 0 0 20px;
+  box-sizing: border-box;
+}
+
+.info h3 {
+  font-family: 微軟正黑, Microsoft JhengHei, Tei TC;
+  font-size: 30px;
+  color: #ffbe00;
+  margin-top: 40px;
+}
+
+.info h2 {
+  font-family: 微軟正黑, Microsoft JhengHei, Tei TC;
+  font-size: 50px;
+  color: #ffbe00;
+  margin-top: 100px;
+}
+
+.info ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.info ul li {
+  color: #fff;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.info ul li span {
+  color: rgb(255, 229, 172);
+}

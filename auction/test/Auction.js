@@ -22,19 +22,19 @@ contract('Auction', accounts => {
         from: accounts[1],
         value: web3.utils.toWei('0.01', 'ether')
       })
-      await sleep(3000)
+      // await sleep(3000)
 
       await auction.bid({
         from: accounts[2],
         value: web3.utils.toWei('0.02', 'ether')
       })
-      await sleep(3000)
+      // await sleep(3000)
 
       await auction.bid({
         from: accounts[3],
         value: web3.utils.toWei('0.03', 'ether')
       })
-      await sleep(3000)
+      // await sleep(3000)
       
       const highest = await auction.getHighest()
       console.log('getHighest', highest._highestBidder)
