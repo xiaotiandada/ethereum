@@ -8,7 +8,9 @@ Ethereum study notes
 - https://solidity.readthedocs.io/en/v0.6.6/introduction-to-smart-contracts.html
 - https://www.qikegu.com/docs/4733
 - https://www.trufflesuite.com/tutorials/pet-shop
+
 - https://cryptozombies.io/
+- https://github.com/loomnetwork/cryptozombies-lesson-code
 
 ## 总结(一) 
 
