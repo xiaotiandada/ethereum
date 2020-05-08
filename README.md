@@ -9,6 +9,7 @@ Ethereum study notes
 - https://www.qikegu.com/docs/4733
 - https://www.trufflesuite.com/tutorials/pet-shop
 
+  **cryptozombies**
 - https://cryptozombies.io/
 - https://github.com/loomnetwork/cryptozombies-lesson-code
 
