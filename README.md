@@ -9,9 +9,12 @@ Ethereum study notes
 - https://www.qikegu.com/docs/4733
 - https://www.trufflesuite.com/tutorials/pet-shop
 
-  **cryptozombies**
+  **cryptozombies** 这个教程写的挺好的!!!
 - https://cryptozombies.io/
 - https://github.com/loomnetwork/cryptozombies-lesson-code
+
+简易的拍卖 rinkeby 测试网
+- https://xiaotiandada.github.io/ethereum/auction/client/
 
 ## 总结(一) 
 
