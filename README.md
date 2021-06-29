@@ -16,7 +16,7 @@ Ethereum study notes
 简易的拍卖 rinkeby 测试网
 - https://xiaotiandada.github.io/ethereum/auction/client/
 
-## 总结(一) 
+## 总结(一)
 
 ### 配置本地的开发环境以及遇到的坑
 
@@ -121,17 +121,3 @@ truffle test
 ```
 
 部署过程基本都大同小异(略过 不重复写了), 可以参考上文的资料进行部署
-
-
-
-
-
-
-
-
-
-
-
-
-
-
